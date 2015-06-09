@@ -1,0 +1,32 @@
+html, :root {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	min-height: 100%;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+	color: $body-color;
+	position: relative;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	&,
+    &:before,
+    &:after {
+        -webkit-box-sizing: inherit;
+           -moz-box-sizing: inherit;
+                box-sizing: inherit;
+        }
+}
+
+img {
+	width: 100%;
+}

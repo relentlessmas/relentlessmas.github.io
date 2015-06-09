@@ -1,0 +1,10 @@
+# Site settings
+title: Relentless Movement and Strength
+email: chris@relentlesmas.com
+description: Personal training and more...
+url: "http://relentlesmas.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+
+# Build settings
+markdown: kramdown
+permalink: /:title
