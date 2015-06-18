@@ -104,7 +104,7 @@ select {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  border: 1px solid $border-color;
+  border: none;
   height: auto;
   margin: 0;
   outline: 0;
@@ -115,7 +115,6 @@ select {
   min-height: 45px;
   font-size: 14px;
   margin-bottom: 15px;
-  @include border-radius(3px);
   color: $body-color;
 }
 
@@ -216,4 +215,5 @@ label + legend {
 textarea {
   padding: 10px;
   font-size: 16px;
+  resize: none;
 }

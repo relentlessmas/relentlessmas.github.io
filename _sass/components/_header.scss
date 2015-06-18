@@ -1,0 +1,34 @@
+.site-header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+.site-nav {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.site-logo {
+	width: 45px;
+	transition: all 0.3s ease;
+}
+
+// .sticky {
+// 	background: rgba(0, 0, 0, 0.9);
+// }
+
+header.sticky {
+	background: rgba(0, 0, 0, 0.9);
+	.site-logo {
+		width: 40px;
+	}
+	.site-nav {
+		padding: 10px 0;
+	}
+}

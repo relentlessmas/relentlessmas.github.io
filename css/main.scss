@@ -41,12 +41,16 @@
 ////////////////////////
 // COMPONENTS
 ////////////////////////
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+
 @import 'components/_bands.scss';
 @import 'components/_buttons.scss';
 @import 'components/_forms.scss';
 @import 'components/_hero.scss';
 @import 'components/_images.scss';
-@import 'components/_post.scss';
+@import 'components/_feature.scss';
+
 
 
 

@@ -1,41 +1,14 @@
-// NEW
-%hero {
+.hero {
   position: relative;
   color: $white;
+  height: 500px;
+  margin-bottom: 40px;
   h1, h2, h3, h4 {
     color: $white;
   }
   a {
     color: inherit;
   }
-  h2 {
-    line-height: 1.5;
-  }
-}
-
-.hero--xsm {
-  @extend %hero;
-  height: 200px;
-}
-
-.hero--sm {
-  @extend %hero;
-  height: 300px;
-}
-.hero--md {
-  @extend %hero;
-  height: 400px;
-}
-.hero--lg {
-  @extend %hero;
-  height: 500px;
-}
-
-.hero--xlg {
-  @extend %hero;
-  height: 600px;
-  margin-top:-70px;
-  z-index: 1;
 }
 
 .hero__container {
@@ -79,8 +52,7 @@
   text-align: center;
   @include breakpoint($large) {
     text-align: left;
-    left: 8%;
-    width: 30%;
+    width: 33.333%;
   }
 }
 
@@ -113,7 +85,9 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .6);
+  // background-image: radial-gradient(circle farthest-side at right bottom,#168eea,#284271 80%,#192e71);
+  // opacity: .6;
 }
 
 .overlay--green::before {

@@ -3,15 +3,15 @@ $legacy-support-for-ie7: true;
 
 // Font faces, stacks and sizes.
 
-$base-font-size:   15px;
+$base-font-size:   16px;
 $base-line-height: 1.5;
 
 
 // Font stacks
 $open:			'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$roboto:		'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$source:		'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$base-font-family: $roboto; // The font family set on the html element.
+$base-font-family: $source; // The font family set on the html element.
 
 
 // Font-weight

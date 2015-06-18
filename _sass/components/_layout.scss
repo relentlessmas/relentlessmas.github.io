@@ -1,4 +1,18 @@
 .container {
-	max-width: 50em;
+	max-width: 85%;
 	margin: 0 auto;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.cave {
+	padding: 40px 0;
 }

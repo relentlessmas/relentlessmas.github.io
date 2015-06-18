@@ -1,16 +1,7 @@
-// This is a modified version of inuitcss's button module
-// https://github.com/inuitcss/objects.buttons/blob/master/_objects.buttons.scss
-
-// RESOURCE: https://github.com/mrmrs/btns/blob/gh-pages/sass/_styles.scss 
-
-// Block
-
 %btn, .btn {
 	padding: 10px 30px;
-	@include border-radius(2px);
 	text-align: center;
 	display: inline-block;
-	text-transform: uppercase;
 	font-size: .75em;
 	font-weight: 600;
 	letter-spacing: .0125em;
@@ -32,6 +23,15 @@
 	}
 }
 
+.btn--outline {
+	@extend %btn;
+	border: 1px solid $primary-color;
+	color: $green;
+	&:hover {
+		color: $white;
+		background: darken($primary-color, 10%);
+	}
+}
 
 .small {
 	padding: 8px 16px;
@@ -41,23 +41,8 @@
 	letter-spacing: .0625em;
 }
 
-.x-sm {
-	padding: 5px 12px;
-	font-size: 10px;
-	line-height: 15px;
-	font-weight: 800;
-	letter-spacing: .0625em;
-}
-
 .large {
 	padding: 15px 40px;
 	font-size: 14px;
-	font-weight: 800;
-}
-
-
-.x-large {
-	padding: 20px 60px;
-	font-size: 16px;
 	font-weight: 800;
 }
