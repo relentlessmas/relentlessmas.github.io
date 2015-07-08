@@ -3,11 +3,13 @@ p {
 }
 
 a {
-  color: $primary-color;
+  color: $body-color;
   text-decoration: none;
-  &:hover {
-    color: $primary-color;
-  }
+  transition: .2s;
+  // &:hover {
+  //   color: $heading-color;
+  //   text-decoration: underline;
+  // }
 }
 
 
@@ -62,18 +64,6 @@ strong {
   font-weight: bold;
 }
 
-.ligatures {
-  font-variant-ligatures: common-ligatures;
-  text-rendering: optimizeLegibility;
-    -moz-font-feature-settings: "liga=1, dlig=1"; 
-    -moz-font-feature-settings: "liga", "dlig"; 
-    -ms-font-feature-settings: "liga", "dlig"; 
-    -o-font-feature-settings: "liga", "dlig"; 
-    -webkit-font-feature-settings: "liga", "dlig"; 
-    font-feature-settings: "liga", "dlig";
-}
-
-
 .light {
   font-weight: 400;
   color: #333;
@@ -97,6 +87,16 @@ strong {
   font-size: 18px;
 }
 
-.fa-star {
-  margin-right: 5px;
+.contact {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.fa {
+  margin-right: 15px;
+}
+
+.title {
+  text-transform: uppercase;
 }

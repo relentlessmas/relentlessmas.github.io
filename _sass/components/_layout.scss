@@ -3,6 +3,8 @@
 	margin: 0 auto;
 }
 
+
+
 .site {
   display: flex;
   min-height: 100vh;
@@ -15,4 +17,46 @@
 
 .cave {
 	padding: 40px 0;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.wrap {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.island {
+	max-width: 85%;
+	position: relative;
+	z-index: 3;
+	background: #eee;
+	@include breakpoint($medium) {
+		max-width: 50%;
+	}
+}
+
+.island__content {
+	padding: 60px;
+	text-align: center;
+}
+
+.Aligner {
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
 }

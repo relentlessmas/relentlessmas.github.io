@@ -1,0 +1,10 @@
+.instafeed {
+	margin-bottom: 20px;
+}
+
+.instafeed a {
+	margin-right: 7px;
+	&:hover {
+		opacity: .6;
+	}
+}

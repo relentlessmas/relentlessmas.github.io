@@ -2,7 +2,7 @@
 
 $spacing-unit--large: 80px;
 
-%band {
+%band, .band {
 	padding-top: $spacing-unit--large;
 	padding-bottom: $spacing-unit--large;
 }
@@ -10,4 +10,9 @@ $spacing-unit--large: 80px;
 .band--grey {
 	@extend %band;
 	background-color: $powder;
+}
+
+.band--black {
+	@extend %band;
+	background-color: #000000;
 }

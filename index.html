@@ -4,13 +4,11 @@ layout: default
 
 <div class="hero">
   <div class="hero__container overlay">
-    <div class="hero__image" style="background-image: url(../images/fitness-class-blr.jpg);">
-      <div class="container">
-        <div class="hero__text--left">
-          <h2 class="headline ligatures">Make your fitness dreams a reality</h2>
-          <p class="sub-head">With tailored fitness and nutrition plans for each individual we are committed to making your goals, our goals.</p>
-          <a href="#learn">Learn more</a>
-        </div>
+    <div class="hero__image" style="background-image: url(../images/fitness-class.jpg);">
+      <div class="hero__text--center animated fadeIn">
+        <h2 class="headline">Make your fitness dreams a reality</h2>
+        <p class="sub-head m--b">With tailored fitness and nutrition plans for each individual we are committed to making your goals, our goals.</p>
+        <a href="#contact" class="btn--outline large lowpacity">Schedule an Appointment</a>
       </div>
     </div>
   </div>
@@ -27,14 +25,14 @@ layout: default
   </div>
 
   <div class="Grid">
-    <div class="Grid-cell feature__img"><img src="../images/group-training-cir.png" alt="Group Training"></div>
     <div class="Grid-cell feature__text">
       <h2>Group Training</h2>
       <span class="thin">Group training is a great way to help you stay on track. With a group training environment you will still be assessed as an individual, but will have the collective group to help you stay motivated and accountable.</span>
     </div>
+    <div class="Grid-cell feature__img order"><img src="../images/group-training-cir.png" alt="Group Training"></div>
   </div>
 
-  <div class="Grid">
+  <div class="Grid m--b">
     <div class="Grid-cell feature__text">
       <h2>Coaching</h2>
       <span class="thin">If you’re ready to take fitness to the next level we also offer coaching for powerlifting and bodybuilding. We will work diligently to get you competition ready and we have access to Elk Grove’s only hybrid training facility, Liftoholics. </span>
@@ -43,44 +41,45 @@ layout: default
   </div>
 </div>
 
-<div class="band--grey">
+<div class="band--black">
+  <div class="container">
+
+    <div class="Grid">
+      <div class="Grid-cell center">
+        <div id="instafeed" class="instafeed"></div>
+        <a class="btn--outline" href="https://instagram.com/relentlessmas/" class="m--b"><i class="fa fa-instagram"></i>Follow us on Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="band--grey">
   <div class="container">
   
-    <div class="Grid Grid--gutters">
+    <div class="Grid Grid--gutters m--b">
 
       <div class="Grid-cell">
-        <h2>Contact us today to schedule your free consultation!</h2>
-        <li class="thin">Email: CoachChris@relentlessmas.com</li>
-        <li class="thin">Phone: 916-676-5036</li>
+        <h2>Your fitness journey starts here</h2>
+        <p>For more information about our services or to schedule a free consulation use the contact information below.</p>
+
+        <li class="contact"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=CoachChris@relentlessmas.com&tf=1" target="_blank"><i class="fa fa-envelope"></i>CoachChris@relentlessmas.com</a></li>
+        <li class="contact"><i class="fa fa-phone"></i>916-676-5036</li>
+        <li class="contact m--b"><a href="https://www.google.com/maps/place/9247+Elk+Grove+Blvd,+Elk+Grove,+CA+95624/@38.4090421,-121.3578713,17z/data=!3m1!4b1!4m2!3m1!1s0x809ac74db43a0247:0xe28909ac69c7f113" target="_blank"><i class="fa fa-location-arrow"></i>9247 Elk Grove Blvd, Elk Grove, CA 95624</a></li>
+
+        <h2>Follow us!</h2>
+        <li class="contact"><a href="https://www.facebook.com/relentlessmas?fref=ts" target="_blank"><i class="fa fa-facebook-official"></i>Facebook</a></li>
+        <li class="contact"><a href="https://instagram.com/relentlessmas/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></li>
+
       </div>
 
       <div class="Grid-cell">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12505.706245251284!2d-121.35054299999999!3d38.408506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c5f90355a705762!2sLiftaholics+Fitness!5e0!3m2!1sen!2sus!4v1434396384564" width="100%" height="400" frameborder="0" style="border:0" scrollwheel="false"></iframe>
+
+        {% include form.html %}
+      
       </div>
 
     </div>
 
+
   </div>
 </div>
-
-
-<!-- <div class="Grid-cell">
-
-  <form action="mailto:evandzorz@gmail.com" enctype="text/plain">
-
-    <input id="form" type="text" name="name" placeholder="Name">
-    <input type="text" name="email" placeholder="Email">
-
-    <textarea name="text" id="" cols="30" rows="10"></textarea>
-    <button type="submit" class="btn--primary">Send your message</button>
-  </form>
-</div>
- -->
-<!-- <div class="container">
-  <div class="Grid">
-    <div class="Grid-cell">
-      <div id="instafeed"></div>    
-    </div>
-  </div>
-</div>
- -->

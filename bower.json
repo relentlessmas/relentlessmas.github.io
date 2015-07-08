@@ -12,7 +12,9 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "breakpoint-sass": "~2.6.1"
+  "dependencies": {},
+  "devDependencies": {
+    "breakpoint-sass": "~2.6.1",
+    "jquery-smooth-scroll": "~1.5.5"
   }
 }

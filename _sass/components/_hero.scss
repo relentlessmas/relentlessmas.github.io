@@ -42,7 +42,8 @@
 .hero__text--center {
   @extend %hero__text;
   text-align: center;
-  @include breakpoint($large) {
+  padding: 20px;
+  @include breakpoint($medium) {
     padding: 0 20%;
   }
 }
@@ -85,7 +86,7 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .7);
   // background-image: radial-gradient(circle farthest-side at right bottom,#168eea,#284271 80%,#192e71);
   // opacity: .6;
 }

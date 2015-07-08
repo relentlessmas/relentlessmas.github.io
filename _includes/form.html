@@ -1,0 +1,32 @@
+<form id="form" action="https://getsimpleform.com/messages?form_api_token=66029a3a6e8f74fae6dd52cf009b91c5" method="post">
+
+	<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+	<input type='hidden' name='redirect_to' value='{{ site.url }}/thankyou.html'/>
+
+	<input id="name" type="text" name="name" placeholder="Name">
+	<input id="email" type="text" name="email" placeholder="Email">
+	<textarea id="message" name="text" cols="30" rows="10" placeholder="Your message"></textarea>
+
+	<button id="btnSubmit" type="submit" class="btn--primary">Send your message</button>
+
+</form>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function () {
+
+	    $('#form').validate({ // initialize the plugin
+	        rules: {
+	            name: {
+	                required: true,
+	            },
+	            email: {
+	                required: true,
+	 				email: true
+	            }             
+	        }
+	    });
+	});
+</script>
+

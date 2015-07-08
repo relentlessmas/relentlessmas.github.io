@@ -18,15 +18,23 @@
 //                      "extra-large-ish" (1000px);
 
 
-$breakpoint-no-query-fallbacks: true;
-$breakpoint-to-ems: true;
+// $breakpoint-no-query-fallbacks: true;
+// $breakpoint-to-ems: true;
+@include breakpoint-set('to ems', true);
 
-$breakpoints: '';
+// $breakpoints: '';
 
-$show-grid-backgrounds: true;
+// $show-grid-backgrounds: true;
 
 // Breakpoints
 $small: 	400px;
 $medium: 	770px;
 $large: 	1000px;
 $huge: 		1300px;
+
+// $BREAKPOINTS: (
+// 	small: 400px,
+// 	medium: 770px,
+// 	large: 100px,
+// 	huge: 1300px,
+// );

@@ -8,15 +8,23 @@
 .site-nav {
 	padding: 20px 0;
 	display: flex;
-	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
 	transition: all 0.3s ease;
+	// justify-content: center;
+	@include breakpoint($medium) {
+		justify-content: space-between;
+	}
 }
 
 .site-logo {
-	width: 45px;
-	transition: all 0.3s ease;
+	background: url('../images/rmas-logo-long.svg') no-repeat;
+	width: 230px;
+	transition: all 0.1s ease;
+	text-indent: -1000px;
+	@include breakpoint($medium) {
+		width: 350px;
+	}
 }
 
 // .sticky {
@@ -26,9 +34,15 @@
 header.sticky {
 	background: rgba(0, 0, 0, 0.9);
 	.site-logo {
-		width: 40px;
+		background: url('../images/rmas-logo.svg') no-repeat;
 	}
 	.site-nav {
 		padding: 10px 0;
+	}
+}
+
+@media only screen and (max-width: $medium) {
+	.contact-button {
+		display: none;
 	}
 }

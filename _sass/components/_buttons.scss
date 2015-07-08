@@ -5,6 +5,7 @@
 	font-size: .75em;
 	font-weight: 600;
 	letter-spacing: .0125em;
+	border-radius: 2em;
 	@include transition(all, 0.2s, ease-in-out);
 	&:link, &:visited {
 		text-decoration: none;
@@ -15,7 +16,7 @@
 
 .btn--primary {
 	@extend %btn;
-	background: $primary-color;
+	background: darken($primary-color, 15%);
 	color: $white;
 	&:hover {
 		color: $white;
@@ -28,8 +29,26 @@
 	border: 1px solid $primary-color;
 	color: $green;
 	&:hover {
-		color: $white;
-		background: darken($primary-color, 10%);
+		border: 1px solid darken($primary-color, 20%);
+		// color: darken($primary-color, 20%);
+	}
+}
+
+.btn--outline-dark {
+	@extend %btn;
+	border: 1px solid darken($primary-color, 20%);
+	color: darken($primary-color, 20%);
+	&:hover {
+		border: 1px solid darken($primary-color, 30%);
+		color: darken($primary-color, 30%);
+	}
+}
+
+
+.lowpacity {
+	opacity: .7;
+	&:hover {
+		opacity: 1;
 	}
 }
 
