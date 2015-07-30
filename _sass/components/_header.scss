@@ -18,7 +18,7 @@
 }
 
 .site-logo {
-	background: url('../images/rmas-logo-long.svg') no-repeat;
+	background: url('../images/rmas-logo.svg') no-repeat;
 	width: 230px;
 	transition: all 0.1s ease;
 	text-indent: -1000px;
@@ -34,7 +34,7 @@
 header.sticky {
 	background: rgba(0, 0, 0, 0.9);
 	.site-logo {
-		background: url('../images/rmas-logo.svg') no-repeat;
+		background: url('../images/rmas-icon.svg') no-repeat;
 	}
 	.site-nav {
 		padding: 10px 0;
